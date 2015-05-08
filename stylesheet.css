@@ -9,23 +9,15 @@
 #text {
     color: #f3a023;
     text-align: center;
-    font-family: ABeeZee, serif;
+    font-family: 'Exo', sans-serif; font-weight: 500;
     font-size: 1.5em
 }
 
-#headers {
+#Nameplate {
     color: #395aba;
     text-align: center;
-    font-family: Akashi, serif;
-    font-size: 2em
-}
-
-@font-face{
-    font-family: "ABeeZee";
-    src: "fonts/ABeeZee.otf"
-}
-
-@font-face{
-    font-family: : "Akashi";
-    url('fonts/Akashi.ttf') format('truetype')
+    font-family: 'Exo', sans-serif; font-weight: 9 00;
+    font-size: 1.8em;
+    margin-top: 0;
+    display:none;
 }
