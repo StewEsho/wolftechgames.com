@@ -1,0 +1,4 @@
+AuthName "This directory is undergoing private beta-testing"
+AuthType Basic
+AuthUserFile /home/wolfnmbu/public_html/beta/.htpasswd
+require valid-user
