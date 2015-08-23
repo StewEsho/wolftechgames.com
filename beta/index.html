@@ -1,61 +1,120 @@
-<html>
-    <head>
-        <title>
-            Wolftech Games
-        </title> 
-        <!-- Imports pure.css Stylesheets -->
-        <link rel="stylesheet" href="stylesheet.css" />
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"/>
-        <!--<![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"/>
-    </head>
+<!doctype html>
+<html class="no-js" lang="en">
     
+    <head>
+      <meta charset="utf-8" />
+      <title>WolfTech Games | Home</title>
+      <link rel="stylesheet" href="css/foundation.css" />
+      <link rel="stylesheet" href="css/stylesheet.css" />
+      <link rel="stylesheet" href="css/owl.carousel.css" />
+      <link rel="stylesheet" href="css/owl.theme.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+      <!--favicon-->
+      <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+
     <body>
-        <img class="pure-img" src="img/BANNER.png" alt="Wolftech Games"/>
-        <div class="pure-g">
-            <div class="pure-u-1-5 pure-u-md-1-5">
-                <a class="pure-button pure-button-primary" href="#">
-                    <i class="fa fa-linux fa-spin"></i>
-                    "Download" for "Linux"
-                </a>
-                <p>
-                    Bacon ipsum dolor amet hamburger pork chop pancetta boudin cupim ham hock. Tenderloin shoulder tail shankle short ribs leberkas. 
-                    Shoulder turducken sausage picanha corned beef. Rump biltong pig, tongue fatback venison pancetta turducken.
-                </p>
-            </div>
-            <div class="pure-u-5-8 pure-u-md-5-8">
-                <a class="pure-button pure-button-primary" href="#">
-                    <i class="fa fa-windows fa-spin"></i>
-                    "Download" for "Windows"
-                </a>
-                <p>
-                    Pancetta drumstick kielbasa beef ribs bresaola brisket swine landjaeger biltong t-bone jowl flank tongue. 
-                    Shoulder ribeye tenderloin, jowl porchetta brisket prosciutto short ribs swine ham hock biltong tri-tip turkey. 
-                    Porchetta shank venison jerky, sirloin cow rump chuck brisket meatloaf frankfurter. Swine leberkas jerky capicola, pork loin beef 
-                    hamburger corned beef pork chop kielbasa brisket meatball filet mignon. T-bone sirloin shank pork belly cow, swine venison strip steak 
-                    picanha ground round meatloaf pig short loin. Short loin chuck tail venison, beef ribs corned beef hamburger capicola boudin. Pastrami 
-                    leberkas ball tip sirloin, kielbasa shoulder venison picanha bresaola shank salami capicola meatloaf.
-                </p>
-            </div>
-            <div class="pure-u-3-24 pure-u-md-3-24">
-                <a class="pure-button pure-button-primary" href="#">
-                    <i class="fa fa-apple fa-spin"></i>
-                    "Download" for "Mac"
-                </a>        
-                <p>
-                    Pastrami short ribs prosciutto tri-tip strip steak turducken. Chicken corned beef boudin sirloin biltong 
-                    drumstick shankle venison t-bone. 
-                    Porchetta tail beef ribs doner pastrami alcatra, venison tongue tri-tip cupim jowl turducken pork belly ham hock. Swine capicola doner 
-                    short loin leberkas pork belly bresaola porchetta. Sausage pork swine, pork belly short ribs rump chicken pancetta tri-tip. Ribeye
-                    pancetta strip steak, ham t-bone landjaeger shankle.
-                </p>
+        <div class="row small-collapse main-page">
+            <!-- Everything is in one row, which has a max width of 1024px -->
+            <!-- Screens larger than 1024px will show the background image behind the content -->
+            <div class="small-12 small-centered columns">
+                <!-- Header + Logo -->
+                <div id="header" class="row">
+                    <img src="img/banner-bars-01.png" id="banner-bars-left" class="small-hide">
+                    <img src="img/banner-bars-02.png" id="banner-bars-right" class="small-hide">
+                    <a>
+                        <img src="img/wolftechlogosmall.png" alt="Wolftech Games" id="logo">
+                    </a>
+                </div>
+                <!--NavBar-->
+                <div class="icon-bar five-up borderless" id="navbar">
+                    <a class="item navbar-currentpage" tabindex="0">
+                        <i class="fa fa-home "></i>
+                        <label>Home</label>
+                    </a>
+                    <a class="item" tabindex="0" href="games">
+                        <i class="fa fa-gamepad"></i>
+                        <label>Games</label>
+                    </a>
+                    <a class="item" tabindex="0" href="http://blog.wolftechgames.com/">
+                        <i class="fa fa-rss"></i>
+                        <label>Blog</label>
+                    </a>
+                    <a class="item" tabindex="0" href="bios">
+                        <i class="fa fa-user"></i>
+                        <label>Dev Bios</label>
+                    </a>
+                    <a class="item" tabindex="0" href="contact">
+                        <i class="fa fa-envelope"></i>
+                        <label>Contact</label>
+                    </a>
+                </div>
+                <!-- Carousel -->
+                <div id="carousel">
+                    <div id="owl" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="games/hexane/">
+                                <img src="img/hexane-1024.png" class="borderless" >
+                                <h1 class="borderless">
+                                    Hexane
+                                </h1>
+                            </a>
+                            
+                        </div>
+                        <div class="item">
+                            <a href="http://blog.wolftechgames.com">
+                                <img src="img/Blog-Pic.png" class="borderless">
+                                <h1 class="borderless">
+                                    Check out our blog!
+                                </h1>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="bios">
+                                <img src="img/seby-v-stew.png" class="borderless">
+                                <h1 class="borderless">
+                                   Meet the Crew
+                                </h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Content -->
+                <div id="content">
+                    <div class="row medium-no-collapse">
+                        <div class="medium-12 columns" id="about-wtg">
+                            <p>
+                                Welcome to the official Wolftech Games website! 
+                                We are a small Canadian indie studio
+                                primarily comprised of just two guys. 
+                                With one programmer and one artist,
+                                we are able to create magic. 
+                                We are currently working on a game called
+                                <em>Hexane</em>, so stick around
+                                for updates and news!
+                            </p>
+                        </div>
+                        <!--
+                            If more content is required,
+                            Divide this row into 8/4 columns and add stuff here.
+                        -->
+                    </div>
+                    <p id = "copyright">&copy; 2015 Wolftech Games</p>
+                </div>
             </div>
         </div>
+        
+        <!-- FOUNDATION SCRIPTS -->
+        <script src="js/vendor/modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>$(document).foundation();</script>
+        <script src="jquery-1.11.3.js"></script>
+        <!-- OWL CAROUSEL SCRIPTS -->
+        <script type="text/javascript" src="js/carousel.js"></script>
+        <script src="js/owl.carousel.js"></script>
     </body>
+    
 </html>

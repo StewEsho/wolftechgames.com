@@ -1,4 +1,4 @@
-AuthName "This directory is undergoing private beta-testing"
+AuthName "This is Wolftech Games' private CDN and file-sharing server"
 AuthType Basic
 AuthUserFile /home/wolfnmbu/public_html/beta/.htpasswd
 require valid-user
