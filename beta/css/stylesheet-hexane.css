@@ -1,0 +1,370 @@
+/******************************
+**********GENERAL CSS**********
+******************************/
+
+/* general class for borderless elements*/
+.borderless {
+  padding: 0em;
+  margin: 0em;
+  border: 0em;
+}
+
+/*refers to the block the page's content is located on */
+.main-page{
+  margin-top: 0.75em;
+  margin-bottom: 2em;
+  padding-bottom: 0;
+  border: 0;
+}
+
+/* default settings for elements, */
+/* also contains background image */
+body {
+  background-color: #e5e5e5;
+  color: whitesmoke;
+  padding: 0;
+  margin: 0;
+  font-family: 'lato', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+.justify{
+  text-align: justify;
+}
+
+/* header text in carousel */
+h1 {
+  color: #B31229;
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0;
+  text-shadow: 0 1px 0 #a20c21,
+               0 2px 0 #740616,
+               0 3px 0 #53040f,
+               0 4px 0 #340008,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+/*Sub Headers */
+h3 {
+  color: #B31229;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.75em;
+  font-weight: 900;
+  text-align: center
+}
+
+a {
+  color: #B31229;
+}
+
+a:hover {
+  color: #d04156;
+  text-decoration: underline;
+}
+
+/******************************
+**********Specific CSS*********
+******************************/
+
+/* header bar, containing logo at top of page */
+#header {
+  background-color: #e5e5e5;
+  padding: auto auto auto auto;
+  -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+  border-bottom: 5px solid #bc3131;
+}
+
+/* displays the logo */
+#logo{
+  display: block;
+  margin: auto auto auto auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* the base navbar and background */
+#navbar{
+  background: #961e1e;
+  -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+}
+
+/* the buttons on the navbar */
+#navbar .item{
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  -webkit-box-shadow: 10px 0 15px -4px rgba(137, 14, 14, 0.5);
+  -moz-box-shadow: 10px 0 15px -4px rgba(137, 14, 14, 0.5);
+  box-shadow: 10px 0 15px -4px rgba(137, 14, 14, 0.5);
+}
+#navbar .item:hover{
+  background: #B31229;
+}
+
+/* images + text on navbar buttons */
+#navbar .item *{
+  color: #b3e7ff;
+}
+
+/* just images on navbar */
+/* contains code for 3d shadows */
+#navbar .item i{
+    text-shadow: 0 1px 0 #00405d,
+                 0 2px 0 #002d41,
+                 0 3px 0 #033764,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+
+/* marks the current page on the navbar */
+.navbar-currentpage{
+  background: #bc3131;
+  border-bottom: 4px solid #410066;
+}
+
+/* content portion of webpages (under navbar/carousel) */
+#content{
+  text-align: center;
+  background: #102026;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* adds right-hand divider to columns */
+.divider {
+  border-right: 2px solid whitesmoke;
+  margin-right:-0.625em; /* size of gutter */
+  padding-right:0.625em; /* size of gutter */
+}
+
+/* styles for the copyright clause at the bottom of every webpage */
+#copyright {
+  padding-bottom: 0.45em;
+  font-size: 1em;
+  color: #e02424;
+}
+
+/* changes highlighted or emphasized text to white */
+em {
+  color: #e02424;
+}
+
+#casey *{
+  max-height: 20em;
+}
+
+#gameplay-home{
+  margin: 1.5em 0 0.45em 0;
+  padding: 1em 0.5em 1em 0.5em;
+  background: #173f50;
+}
+/******************************************
+*************| MEDIA QUERIES |*************
+******************************************/
+
+
+/****************
+Tiny Screens
+****************/
+@media only screen and (max-width: 20em) { /* max-width 320px, mobile-only styles*/
+  #header-padding {
+    font-size: 45%;    
+  }
+
+  h1{
+    font-size: 1.35em;
+  }
+
+  h3{
+    font-size: 1.0125em;    
+  }
+
+  #navbar .item label{
+    display: none;
+  }
+
+  #navbar .item i{
+    display: block;
+    margin-left: -100%;
+    margin-right: -100%;
+    padding-bottom: 0.235em;    
+  }
+
+  .divider {
+    border: none;
+  }
+
+  .small-hide{
+    display: none;
+  }
+
+  .main-page{
+    margin: 0;
+  }
+  
+  body{
+    background-color: #102026; !important 
+  }
+  
+  #casey *{
+    max-height: 12em;
+  } 
+  
+  .justify{
+    text-align: center  
+  }
+}
+
+/****************
+Small Screens
+****************/
+@media only screen and (min-width: 20.063em) and (max-width: 40em) { /* min-width 321px and max-width 640px*/
+  #header-padding {
+    font-size: 35%;    
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  h3{
+    font-size: 1.5em;    
+  }
+
+  #navbar .item label{
+    display: none;
+  }
+
+  #navbar .item i{
+    padding-bottom: 0.235em;    
+  }
+
+  #owl br{
+    display: none;
+  }
+
+  .divider {
+    border: none;
+  }
+
+  .small-hide{
+    display: none;
+  }
+
+  .main-page{
+    margin: 0;
+  }
+  
+  body{
+    background-color: #102026; !important 
+  }
+} 
+
+/****************
+Medium Screens
+****************/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px*/
+  #content p{
+    font-size: 1.2em;   
+  }
+  .main-page{
+    margin: 0;
+  }
+  
+  body{
+    background-color: #102026; !important 
+  }
+  .medium-hide{
+    display: none;
+  }
+  #gameplay-home img{
+    width: 75%;
+  }
+  .justify{
+    text-align: center  
+  }
+}
+/****************
+Large Screens
+****************/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { /* min-width 1025px and max-width 1440px*/
+  #content p{
+    font-size: 1.25em;    
+  }
+  .main-page{
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  body{
+    background-image:url(../img/hexane/hexane-background.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
+  .large-hide{
+    display: none;
+  }
+}
+/****************
+X-Large Screens
+****************/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { /* min-width 1441px and max-width 1920px*/
+  #content p{
+    font-size: 1.25em;    
+  }
+  .main-page{
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  body{
+    background-image:url(../img/hexane/hexane-background.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
+  .large-hide{
+    display: none;
+  }
+}
+/****************
+HD Screens
+****************/
+@media only screen and (min-width: 120.063em) { /* min-width 1921px */
+  #content p{
+    font-size: 1.25em;    
+  }
+  .main-page{
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  body{
+    background-image:url(../img/hexane/hexane-background.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
+}

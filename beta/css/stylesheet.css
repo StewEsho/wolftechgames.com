@@ -1,0 +1,514 @@
+/******************************
+**********GENERAL CSS**********
+******************************/
+
+/* general class for borderless elements*/
+.borderless {
+    padding: 0em;
+    margin: 0em;
+    border: 0em;
+}
+
+/*refers to the block the page's content is located on */
+.main-page{
+    margin-top: 0.75em;
+    margin-bottom: 2em;
+}
+
+/* default settings for elements, */
+/* also contains background image */
+body {
+    background-color: #232323;
+    color: #f3a023;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+}
+
+/* header text in carousel */
+h1 {
+    color: #3451a3;
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+    text-shadow: 0 1px 0 #001348,
+                 0 2px 0 #000a27;
+}
+
+/*Sub Headers */
+h3 {
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.75em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 1px 0 #acacac,
+                 0 2px 0 #464646;
+}
+
+a {
+    color: #3451a3;
+}
+
+a:hover {
+    color: #577ce6;
+}
+
+/******************************
+**********Specific CSS*********
+******************************/
+
+/* header bar, containing logo at top of page */
+#header {
+    background-color: #2f2f2f;
+    border-bottom: 0.313em solid #f3a023;
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+}
+
+#banner-bars-left {
+    display: block;
+    float: left;
+}
+
+#banner-bars-right {
+    display: block;
+    float: right;
+}
+
+/* displays the logo */
+#logo{
+    display: block;
+    margin: auto auto auto auto;
+    border: auto auto auto auto;
+    padding-top: 2.5%;
+}
+
+/* the base navbar and background */
+#navbar{
+    background: #3451a3;
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.5);
+}
+
+/* the buttons on the navbar */
+#navbar .item{
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    -webkit-box-shadow: 10px 0 15px -4px rgba(36, 67, 155, 0.5);
+    -moz-box-shadow: 10px 0 15px -4px rgba(36, 67, 155, 0.5);
+    box-shadow: 10px 0 15px -4px rgba(36, 67, 155, 0.5);
+}
+#navbar .item:hover{
+    background: #4872E9;
+}
+
+/* images + text on navbar buttons */
+#navbar .item *{
+    color: #f3a023;
+}
+
+/* just images on navbar */
+/* contains code for 3d shadows */
+#navbar .item i{
+    text-shadow: 0 1px 0 #F5A123,
+               0 2px 0 #D98F1F,
+               0 3px 0 #9A6516,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+/* marks the current page on the navbar */
+.navbar-currentpage{
+    background: #264ab1;
+    border-bottom: 4px solid #F5A123;
+}
+
+/* carousel images */
+#owl .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+}
+
+/*carousel*/
+#owl{
+    background: #2e2e2e;
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* content portion of webpages (under navbar/carousel) */
+#content{
+    text-align: center;
+    background: #121212;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* adds right-hand divider to columns */
+.divider {
+    border-right: 2px solid whitesmoke;
+    margin-right:-0.625em; /* size of gutter */
+    padding-right:0.625em; /* size of gutter */
+}
+
+/* styles for the copyright clause at the bottom of every webpage */
+#copyright {
+    margin: 0.45em;
+    font-size: 1em;
+    color: #3859b6;
+}
+
+/* changes highlighted or emphasized text to white */
+em {
+    color: whitesmoke;
+}
+
+#about-wtg *{
+    margin: auto 0 auto 0;
+}
+
+/************************************************************************/
+
+/**GAMES page only**/
+#upcoming-games{
+    background: #f3a023;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+
+#legacy-games{
+    background: #3e3e3e;
+    padding-bottom: 1em;
+    margin-top: 0;
+    vertical-align: top;
+}
+
+#upcoming-games img{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/**DEV BIOS page only**/
+.bio-portrait{
+    border-radius: 50%;
+    width: 12.5em;
+    height: 12.5em;
+}
+
+/**CONTACT page only**/
+#contact-info{
+    color: whitesmoke;
+    font-size: 1.25em;
+    background: #333333
+}
+
+#contact-info a{
+    color: #f3a023;
+    text-decoration: none;
+}
+
+#contact-info a:hover{
+    color: #ffbe5d;
+    text-decoration: underline;
+}
+
+#contact-info i{
+    color: #388aea;    
+}
+
+#email-header{
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+.email{
+    color: #3859b6;
+}
+
+#mc_embed_signup{
+    position: relative;
+    display: block;
+    background:#333333;
+    padding: 0.625em;
+    height: 420px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+
+#mc_embed_signup .email {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%
+    border: 1px solid #999;
+    text-align: center;
+    color: #3451a3;
+    font-size:1.125em;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+}
+
+#mc-embedded-subscribe-form{
+    display: absolute;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+#mc_embed_signup .email:focus {
+    border-color: #333;
+}
+
+#mc_embed_signup .button {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.625em;
+    background: #3451a3;
+    margin-top: 0em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+
+#unsubcribe{
+    font-size: 1em !important; 
+    color: #687ebf !important;
+    margin-top: -0.75em;
+    margin-bottom: 0.75em;
+    display: block;
+}
+
+#unsubscribe:hover{
+    color: #3c5cba !important;
+}
+
+/******************************************
+*************| MEDIA QUERIES |*************
+******************************************/
+
+
+/****************
+Tiny Screens
+****************/
+@media only screen and (max-width: 20em) { /* max-width 320px, mobile-only styles*/
+    body{
+        background-color: #121212;
+    }
+    
+    h1{
+        font-size: 1.35em;
+    }
+    
+    h3{
+        font-size: 1.0125em;    
+    }
+    
+    #navbar .item label{
+        display: none;
+    }
+    
+    #navbar .item i{
+        display: block;
+        margin-left: -100%;
+        margin-right: -100%;
+        padding-bottom: 0.235em;    
+    }
+    
+    #owl br{
+        display: none;
+    }
+    
+    .divider {
+        border: none;
+    }
+    
+    .small-hide{
+        display: none !important;
+    }
+    
+    .main-page{
+        margin: 0;
+    }
+    
+    #contact-info{
+        font-size:1em;    
+    }
+    
+    #email-header{
+        font-size: 1em;
+    }
+    
+    #mc_embed_signup{
+        margin-top:0.25em;
+        height: auto;    
+    }
+    
+    #mc-embedded-subscribe-form{
+        margin: auto;
+        border: none;
+    }
+}
+
+/****************
+Small Screens
+****************/
+@media only screen and (min-width: 20.063em) and (max-width: 40em) { /* min-width 321px and max-width 640px*/    
+    body{
+        background-color: #121212;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+    
+    h3{
+        font-size: 1.5em;    
+    }
+    
+    #navbar .item label{
+        display: none;
+    }
+    
+    #navbar .item i{
+        padding-bottom: 0.235em;    
+    }
+    #owl br{
+        display: none;
+    }
+    
+    .divider {
+        border: none;
+    }
+    
+    .small-hide{
+        display: none !important;
+    }
+    
+    .main-page{
+        margin: 0;
+    }
+    
+    #mc_embed_signup{
+        margin-top:0.25em;
+        height: auto;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #mc-embedded-subscribe-form{
+        margin: auto;
+        border: none;
+    }
+} 
+
+/****************
+Medium Screens
+****************/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px*/
+    body{
+        background-color: #121212;
+    }
+    
+    #content p{
+        font-size: 1.25em;    
+    }
+    .main-page{
+        margin: 0;
+    }
+    #mc-embedded-subscribe-form{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+/****************
+Large Screens
+****************/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { /* min-width 1025px and max-width 1440px*/
+    body{
+        background-image:url(../img/background.png);
+        background-position: center;
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    }
+    #content p{
+        font-size: 1.25em;    
+    }
+    .main-page{
+        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    #mc-embedded-subscribe-form{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+/****************
+X-Large Screens
+****************/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { /* min-width 1441px and max-width 1920px*/
+    body{
+        background-image:url(../img/background.png);
+        background-position: center;
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    }
+    #content p{
+        font-size: 1.25em;    
+    }
+    .main-page{
+        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    #mc-embedded-subscribe-form{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+/****************
+HD Screens
+****************/
+@media only screen and (min-width: 120.063em) { /* min-width 1921px */
+    body{
+        background-image:url(../img/background.png);
+        background-position: center;
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    }
+    #content p{
+        font-size: 1.25em;    
+    }
+    .main-page{
+        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    #mc-embedded-subscribe-form{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
