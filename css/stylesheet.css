@@ -456,11 +456,6 @@ Large Screens
     #content p{
         font-size: 1.25em;    
     }
-    .main-page{
-        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
     #mc-embedded-subscribe-form{
         top: 50%;
         transform: translateY(-50%);
@@ -479,11 +474,6 @@ X-Large Screens
     #content p{
         font-size: 1.25em;    
     }
-    .main-page{
-        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
     #mc-embedded-subscribe-form{
         top: 50%;
         transform: translateY(-50%);
@@ -501,11 +491,6 @@ HD Screens
     }
     #content p{
         font-size: 1.25em;    
-    }
-    .main-page{
-        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     #mc-embedded-subscribe-form{
         top: 50%;
