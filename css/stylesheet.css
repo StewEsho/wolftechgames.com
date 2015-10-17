@@ -49,9 +49,9 @@ h3 {
     font-size: 1.75em;
     font-weight: 900;
     text-align: center;
-    text-shadow: 0 1px 0 #acacac,
+    /*text-shadow: 0 1px 0 #acacac,
                  0 2px 0 #464646;
-}
+*/}
 
 a {
     color: #3451a3;
@@ -120,7 +120,7 @@ a:hover {
 /* just images on navbar */
 /* contains code for 3d shadows */
 #navbar .item i{
-    text-shadow: 0 1px 0 #F5A123,
+   /* text-shadow: 0 1px 0 #F5A123,
                0 2px 0 #D98F1F,
                0 3px 0 #9A6516,
                0 6px 1px rgba(0,0,0,.1),
@@ -130,7 +130,7 @@ a:hover {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
-}
+*/}
 
 /* marks the current page on the navbar */
 .navbar-currentpage{
@@ -204,7 +204,9 @@ em {
 }
 
 #upcoming-games img{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+/*    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
+    padding: 10px 11px;
+    background-color: hsl(36, 68%, 48%);
 }
 
 /**DEV BIOS page only**/
