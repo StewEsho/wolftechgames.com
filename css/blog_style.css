@@ -1,0 +1,18 @@
+#colophon {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    line-height: 1.7em;
+}
+
+#secondary {
+    padding-bottom: inherit;
+    margin-bottom: auto;
+}
+
+@media (max-width: 1215px) {
+  #header {
+    display: none;
+    
+  }
+  
+}
