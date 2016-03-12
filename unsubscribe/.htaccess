@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^unsubscribe\.wolftechgames\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.unsubscribe\.wolftechgames\.com$
+RewriteRule ^/?$ "http\:\/\/wolftechgames\.us11\.list\-manage\.com\/unsubscribe\?u\=667e259b186dc126024ea4019\&id\=9be4963d8b" [R=301,L]
+
